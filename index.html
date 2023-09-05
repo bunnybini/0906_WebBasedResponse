@@ -3,7 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Design Stopwatch using HTML CSS and JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
   </head>
-  <body></body>
+
+  <body>
+    <div class="container">
+      <h1>THE DISANCE BETWEEN WORLD AND CYBERSPACE</h1>
+      <div id="time">
+        <!-- <span class="digit" id="hr"> 00</span>
+        <span class="txt">:</span> -->
+        <span class="digit" id="min"> 00</span>
+        <span class="txt">:</span>
+        <span class="digit" id="sec"> 00</span>
+        <span class="txt">:</span>
+        <span class="digit" id="count"> 00</span>
+      </div>
+
+      <form
+        action="https://www.google.com/search"
+        method="get"
+        class="search-bar"
+        id="myButton"
+        target="_blank"
+      >
+        <input type="text" placeholder="Search Engine" name="q" />
+        <button type="submit"><img src="image/search.png" /></button>
+      </form>
+
+      <!-- <div class="label">
+        <h2>Search Engine</h2>
+        <input type="text" id="myText" /><br />
+        <button type="button" id="myButton">Enter</button>
+      </div> -->
+
+      <div id="buttons">
+        <button class="btn" id="start">Start</button>
+        <button class="btn" id="stop">Stop</button>
+        <button class="btn" id="reset">Reset</button>
+      </div>
+    </div>
+  </body>
 </html>
