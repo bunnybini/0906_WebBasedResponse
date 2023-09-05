@@ -1,6 +1,12 @@
-let startBtn = document.getElementById("start");
+import { Application } from "@splinetool/runtime";
+
+const canvas = document.getElementById("canvas3d");
+const app = new Application(canvas);
+app.load("https://prod.spline.design/CH8vG0s8lv7ouGUE/scene.splinecode");
+
+// let startBtn = document.getElementById("start");
 let stopBtn = document.getElementById("stop");
-let resetBtn = document.getElementById("reset");
+// let resetBtn = document.getElementById("reset");
 let searchInput = document.querySelector(".search-bar input"); //search engine
 
 let hour = 0;
@@ -21,26 +27,26 @@ searchInput.addEventListener("input", function () {
 //   timer = true;
 // };
 
-startBtn.addEventListener("click", function () {
-  timer = true;
-  stopWatch();
-});
+// startBtn.addEventListener("click", function () {
+//   timer = true;
+//   stopWatch();
+// });
 
 stopBtn.addEventListener("click", function () {
   timer = false;
 });
 
-resetBtn.addEventListener("click", function () {
-  timer = false;
-  hour = 0;
-  minute = 0;
-  second = 0;
-  count = 0;
-  //   document.getElementById("hr").innerHTML = "00";
-  document.getElementById("min").innerHTML = "00";
-  document.getElementById("sec").innerHTML = "00";
-  document.getElementById("count").innerHTML = "00";
-});
+// resetBtn.addEventListener("click", function () {
+//   timer = false;
+//   hour = 0;
+//   minute = 0;
+//   second = 0;
+//   count = 0;
+//   //   document.getElementById("hr").innerHTML = "00";
+//   document.getElementById("min").innerHTML = "00";
+//   document.getElementById("sec").innerHTML = "00";
+//   document.getElementById("count").innerHTML = "00";
+// });
 
 function stopWatch() {
   if (timer) {
