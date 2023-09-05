@@ -1,9 +1,3 @@
-import { Application } from "@splinetool/runtime";
-
-const canvas = document.getElementById("canvas3d");
-const app = new Application(canvas);
-app.load("https://prod.spline.design/CH8vG0s8lv7ouGUE/scene.splinecode");
-
 // let startBtn = document.getElementById("start");
 let stopBtn = document.getElementById("stop");
 // let resetBtn = document.getElementById("reset");
